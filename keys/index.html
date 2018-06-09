@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ru">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>UMAI -- Klava</title>
+	</head>
+	<body>
+		<!-- хапаешь от сих-->
+		<div class="main-container">
+			<div class="requisite-checking-box noselt" id="rqcbox-checks">
+				<h1 class="check-requisite-header">Убедиcь, в правильности данных</h1>
+				<p class="check-requisite-text" id="requisite-fio">$clientname</p>
+				<p class="check-requisite-text" id="requisite">$requisite</p>
+			</div>
+			<div class="requisite-checking-box" id="rqcbox-fio">
+				<input id="inp-fio" autofocus="" maxlength="90" value="$clientname" data-saveto="#requisite-fio">
+						<div class="klava noselt" data-for-input="#inp-fio">
+							<p class="row"><b class="key ce" data-specialkey="CE"><span>&#x274c;&nbsp;</span>Все не так!</b><b class="key spanw">&nbsp;</b><b class="key enter wide" data-specialkey="Enter"><span>&#x1f44d; Так – хорошо!</span></b><b class="key spanw">&nbsp;</b><b class="key backspace" data-specialkey="BackSpace"><span>&#8678;</span></b></p>
+							<p class="row">&nbsp;</p>
+							<p class="row"><b class="key"><span>ё</span></b><b class="key"><span>й</span></b><b class="key"><span>ц</span></b><b class="key"><span>у</span></b><b class="key"><span>к</span></b><b class="key"><span>е</span></b><b class="key"><span>н</span></b><b class="key"><span>г</span></b><b class="key"><span>ш</span></b><b class="key"><span>щ</span></b><b class="key"><span>з</span></b><b class="key"><span>х</span></b><b class="key"><span>ъ</span></b><b class="key pipe"><span>/</span><sup>\</sup></b></p>
+							<p class="row"><b class="key capslock" data-specialkey="CapsLock"><span>&#8686;&#8686;</span></b><b class="key"><span>ф</span></b><b class="key"><span>ы</span></b><b class="key"><span>в</span></b><b class="key"><span>а</span></b><b class="key"><span>п</span></b><b class="key"><span>р</span></b><b class="key"><span>о</span></b><b class="key"><span>л</span></b><b class="key"><span>д</span></b><b class="key"><span>ж</span></b><b class="key"><span>э</span></b><b class="key enter" data-specialkey="Enter"><span>&hookleftarrow;</span></b></p>
+							<p class="row"><b class="key shift" data-specialkey="Shift"><span>&#8682;</span></b><b class="key"><span>я</span></b><b class="key"><span>ч</span></b><b class="key"><span>с</span></b><b class="key"><span>м</span></b><b class="key"><span>и</span></b><b class="key"><span>т</span></b><b class="key"><span>ь</span></b><b class="key"><span>б</span></b><b class="key"><span>ю</span></b><b class="key"><span>.</span><sup>,</sup></b><b class="key shift" data-specialkey="Shift"><span>&#8682;</span></b></p>
+							<p class="row"><b class="key space" data-specialkey="Space"><span>&blank;</span></b></p>
+						</div>
+			</div>
+			<div class="requisite-checking-box" id="rqcbox-inn">
+				<input id="inp-inn" autofocus="" maxlength="14" value="$requisite" data-saveto="#requisite">
+						<div class="klava numpad noselt" data-for-input="#inp-inn">
+							<p class="row"></p>
+							<p class="row"><b class="key"><span>7</span></b><b class="key"><span>8</span></b><b class="key"><span>9</span></b><b class="key span">&nbsp;</b><b class="key backspace" data-specialkey="BackSpace"><span>&#8678;</span></b></p>
+							<p class="row"><b class="key"><span>4</span></b><b class="key"><span>5</span></b><b class="key"><span>6</span></b><b class="key span">&nbsp;</b><b class="key ce" data-specialkey="CE"><span>&#x274c;</span></b></p>
+							<p class="row"><b class="key"><span>1</span></b><b class="key"><span>2</span></b><b class="key"><span>3</span></b><b class="key span">&nbsp;</b><b class="key enter" data-specialkey="Enter"><span>&hookleftarrow;</span></b></p>
+							<p class="row"><b class="key zero"><span>0</span></b><b class="key span">&nbsp;</b><b class="key spanw">&nbsp;</b></p>
+						</div>
+			</div>
+		</div>
+		<div id="rqcbox-msg">
+			<div class="rqcbox-msg-content"><b class="rqcbox-msg-wait"></b>
+				<p>тихо будь!</p>
+				<p>я кубатурю</p>
+			</div>
+		</div>
+		<div class="navigation-buttons clearfix noselt">
+			<ul>
+				<li class="cancel"><a href="#">Отмена</a></li>
+				<li class="next"><a href="#">Далее</a></li>
+			</ul>
+		</div>
+		<link rel="stylesheet" href="css/main.css">
+		<script src="js/jquery.js"></script>
+		<script src="js/helpers.js"></script>
+		<script src="js/dom.js"></script>
+		<script src="js/documentselection.js"></script>
+		<script src="js/rqcheck.js"></script>
+		<!-- хапаешь до прямо сюда-->
+	</body>
+</html>
