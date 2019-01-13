@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>CALCULATOR</title>
+</head>
+<body>
+<script>
+    var screen = 0
+    var memory = 0
+</script>
+<div id="disp" style="width: 140px; border-style: outset">0</div>
+<button onclick="screen = screen * 10 + 7;
+document.getElementById('disp').innerText = screen">7</button>
+<button onclick="screen = screen * 10 + 8;
+document.getElementById('disp').innerText = screen">8</button>
+<button onclick="screen = screen * 10 + 9;
+document.getElementById('disp').innerText = screen">9</button>
+<br>
+<button onclick="screen = screen * 10 + 4;
+document.getElementById('disp').innerText = screen">4</button>
+<button onclick="screen = screen * 10 + 5;
+document.getElementById('disp').innerText = screen">5</button>
+<button onclick="screen = screen * 10 + 6;
+document.getElementById('disp').innerText = screen">6</button>
+<br>
+<button onclick="screen = screen * 10 + 1;
+document.getElementById('disp').innerText = screen">1</button>
+<button onclick="screen = screen * 10 + 2;
+document.getElementById('disp').innerText = screen">2</button>
+<button onclick="screen = screen * 10 + 3;
+document.getElementById('disp').innerText = screen">3</button>
+<br>
+<hr>
+
+<button onclick="screen = 0; 
+document.getElementById('disp').innerText = screen">C</button>
+
+<button onclick="screen = screen * 10;
+document.getElementById('disp').innerText = screen">0</button>
+
+<br>
+<button onclick="memory=screen;
+screen=0">+</button>
+<button onclick="
+document.getElementById('disp').innerText = screen + memory;
+screen = 0;
+memory = 0;">=</button>
+
+
+</body>
+</html>
