@@ -1,0 +1,20 @@
+body {
+	background-color: #c0c0c0;
+	color: #404040;
+	font-size: 24px;
+}
+ul {
+	list-style-type: square;
+}
+
+li:hover{
+	color: red;
+}
+
+a {
+	color:#404040;
+}
+
+a:hover {
+	color: red;
+}
