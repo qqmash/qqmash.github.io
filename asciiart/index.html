@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Анимация</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<script>
+function sleep(milliseconds) {
+  var start = new Date().getTime();
+  for (var i = 0; i < 1e7; i++) {
+    if ((new Date().getTime() - start) > milliseconds){
+      break;
+    }
+  }
+}
+
+a1="               /'.    .'\\"
+a2="               \\( \\__/ )/"
+a3="         ___   / (.)(.) \\   ___"
+a4="    _.-\"`_  `-.|  ____  |.-`  _`\"-._"
+a5=" .-'.-'//||`'-.\\  V--V  /.-'`||\\\\'-.'-."
+a6="`'-'-.// ||    / .___.  \\    || \\\\.-'-'`"
+a7="      `-.||_.._|        |_.._||.-'"
+a8="               \\ ((  )) /"
+a9="                '.    .'"
+a10="                  `\\/`"
+
+document.write('<pre>')
+document.write('<div id="black">'+a1+'</div>')
+document.write('<div id="red">'+a2+'</div>')
+document.write('<div id="green">'+a3+'</div>')
+document.write('<div id="blue">'+a4+'</div>')
+document.write('<div id="black">'+a5+'</div>')
+document.write('<div id="red">'+a6+'</div>')
+document.write('<div id="green">'+a7+'</div>')
+document.write('<div id="blue">'+a8+'</div>')
+document.write('<div id="black">'+a9+'</div>')
+document.write('<div id="red">'+a10+'</div>')
+document.write('</pre>')
+</script>
+
+
+</body>
+</html>
