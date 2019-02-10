@@ -6,10 +6,12 @@
 </head>
 <body>
 <script>
-    var screen = 0
-    var memory = 0
+  var screen = 0
+  var memory = 0
+  var operator = 0
 </script>
 <div id="disp" style="width: 140px; border-style: outset">0</div>
+
 <button onclick="screen = screen * 10 + 7;
 document.getElementById('disp').innerText = screen">7</button>
 <button onclick="screen = screen * 10 + 8;
@@ -33,20 +35,21 @@ document.getElementById('disp').innerText = screen">3</button>
 <br>
 <hr>
 
-<button onclick="screen = 0; 
-document.getElementById('disp').innerText = screen">C</button>
-
+<button onclick="memory = screen;
+screen = 0;
+operator = 1">+</button>
 <button onclick="screen = screen * 10;
 document.getElementById('disp').innerText = screen">0</button>
-
+<button onclick="memory = screen;
+screen = 0;
+operator = -1">-</button>
 <br>
-<button onclick="memory=screen;
-screen=0">+</button>
-<button onclick="
-document.getElementById('disp').innerText = screen + memory;
+
+<button onclick="screen = 0; 
+document.getElementById('disp').innerText = screen">C</button>
+<button onclick="document.getElementById('disp').innerText = memory + screen * operator;
 screen = 0;
 memory = 0;">=</button>
-
 
 </body>
 </html>
