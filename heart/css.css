@@ -1,8 +1,6 @@
-
-.header {
-
+body {
+	text-align: center;
 }
-
 
 .heart {
 	height: 50px;
@@ -17,28 +15,23 @@
 	animation: beat 1s infinite;
 }
 
-.heart:before {
-	height: 50px;
-	width: 50px;
-	background-color: red;
-	position: absolute;
-
-	border-radius: 50%;
-	content: "";
-
-	left: -25px;
-	top: 0;
-}
-
+.heart:before,
 .heart:after {
 	height: 50px;
 	width: 50px;
 	background-color: red;
 	position: absolute;
 
-	border-radius: 50%;
 	content: "";
+	border-radius: 50%;
+}
 
+.heart:before {	
+	left: -25px;
+	top: 0;
+}
+
+.heart:after {
 	left: 0;
 	top: -25px;
 }
@@ -62,35 +55,3 @@
 			rotate(45deg);
 	}
 }
-
-
-
-
-
-
-
-
-
-
-
-/*
-
-@keyframes heartbeat
-{
-  0%
-  {
-    transform: scale( 1 )
-      rotate(-45deg);    
-  }
-  20%
-  {
-    transform: scale( 1.25 )
-      rotate(-45deg);  
-  }
-   40%
-  {
-    transform: scale( 1.5 )
-      rotate(-45deg);
-  }
-}
-*/
