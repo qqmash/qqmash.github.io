@@ -1,0 +1,17 @@
+
+body {
+	background: black;
+}
+table {
+	font-family: 'Coiny', cursive;
+	width: 300px;
+	height: 300px;
+}
+
+td {
+	width: 100px;
+	height: 100px;
+	color: white;
+	text-align: center;
+	font-size: 80px;
+}
