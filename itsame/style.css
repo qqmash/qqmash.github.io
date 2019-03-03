@@ -1,0 +1,45 @@
+/* DivTable.com */
+
+.body {
+	background-color: #a6ddbc;
+}
+
+.image {
+	padding: 40px 100px;
+	float: left;
+}
+.title {
+	padding: 80px;
+	font-size: 20px;
+	float: center;
+	text-align: center;
+}
+.divTable {
+	padding: 20px 10%;
+	display: table;
+	width: 80%;
+}
+.divTableBody {
+	display: table-row-group;
+}
+.Row {
+	display: table-row;
+}
+.Cell {
+	border: 1px solid #999999;
+	display: table-cell;
+	padding: 3px 10px;
+	text-align: center;
+}
+
+.Heading {
+	background-color: #62846f;
+	/*display: table-header-group;*/
+	display: table-row;
+	font-weight: bold;
+}
+.Foot {
+	background-color: #62846f;
+	/*display: table-footer-group;*/
+	font-weight: bold;
+}
