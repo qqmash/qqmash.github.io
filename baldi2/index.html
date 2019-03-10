@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	<div style="float: left">
+		<img src = "fon.jpg" width=500px>
+	</div>
+	<div style="
+		float: center;
+		padding: 40px;
+		text-align: center;
+	">
+		<h1>HELLOOOOO THAT'S MEEEE!</h1>
+
+		<p id="question">5+5=</p>
+		<input id="answer">
+		<button onclick="action()">Ответить</button>
+		<p id="result"></p>
+
+		<script>
+			//getElementById('result').innerHTML = Date();
+			function action() {
+				text = document.getElementById("answer").value;
+
+				if (text == 10) {
+					document.getElementById("result").innerHTML = "Правильно!";
+					document.getElementById('result').style.color = "green";
+				}
+				else {
+					document.getElementById("result").innerHTML = "Хмм... Сначала выучи математику!";
+					document.getElementById('result').style.color = "red";
+				}
+			}
+		</script>
+		
+	</div>
+</body>
+</html>
