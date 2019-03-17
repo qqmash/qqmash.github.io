@@ -1,0 +1,28 @@
+.ascii-animation {
+  font-family: monospace;
+  width: 67ch;
+  margin: 0;
+  padding: 0;
+  white-space: pre;
+  overflow: hidden;
+  position: relative;
+}
+.ascii-animation:hover {
+  overflow: auto;
+}
+.ascii-animation:hover .ascii-animation-inner {
+  animation: none;
+}
+.ascii-animation-inner {
+  width: 402ch; /* 67ch * 6 */
+  animation: pew-pew 3s steps(6, end) infinite alternate;
+  position: relative;
+}
+@keyframes pew-pew {
+  0% {
+    left: 0;
+  }
+  100% {
+    left: -402ch; /* 67ch * 6 */
+  }
+}
