@@ -22,16 +22,21 @@
 
 		<script>
 			//getElementById('result').innerHTML = Date();
+
+			function get(id) {
+				return document.getElementById(id);
+			}
+
 			function action() {
-				text = document.getElementById("answer").value;
+				text = get("answer").value;
 
 				if (text == 10) {
-					document.getElementById("result").innerHTML = "Правильно!";
-					document.getElementById('result').style.color = "green";
+					get("result").innerHTML = "Правильно!";
+					get('result').style.color = "green";
 				}
 				else {
-					document.getElementById("result").innerHTML = "Хмм... Сначала выучи математику!";
-					document.getElementById('result').style.color = "red";
+					get("result").innerHTML = "Хмм... Сначала выучи математику!";
+					get('result').style.color = "red";
 				}
 			}
 		</script>
