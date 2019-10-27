@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Test</title>
+</head>
+<body>
+<h1>1. Сколько людей в мире?</h1>
+<input name="r" type="radio" id=1>7 млрд<br>
+<input name="r" type="radio" id=2>6 млрд<br>
+<input name="r" type="radio" id=3>5 млрд<br>
+<input name="r" type="radio" id=4>4 млрд<br>
+<button onclick="
+if (
+	document.getElementById(1).checked &&
+	!document.getElementById(2).checked &&
+	!document.getElementById(3).checked &&
+	!document.getElementById(4).checked
+)
+	alert('Молодец, 5!')
+else
+	alert('Садись, 2 :(')
+">Ответить</button>
+
+</body>
+</html>
