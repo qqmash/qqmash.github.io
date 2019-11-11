@@ -1,0 +1,15 @@
+body {
+    background-color: #87d6f5;
+}
+
+p, input, select {
+    font-size: 24px;
+}
+
+
+div {
+    padding: 20px;
+    margin: 30px;
+    font-size: 40px;
+    color: red;
+}
