@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Камень-ножницы-бумага</title>
+</head>
+<body>
+    <script>
+        bot = "бумага"
+        user = "ножницы"
+
+        function turn() {
+        if (user == "ножницы")
+            if (bot == "ножницы") alert("Ничья")
+            else if (bot == "камень") alert("Проигрыш")
+            else alert("Победа")
+        else if (user == "камень")
+            if (bot == "ножницы") alert("Победа")
+            else if (bot == "камень") alert("Ничья")
+            else alert("Проигрыш")
+        else
+            if (bot == "ножницы") alert("Проигрыш")
+            else if (bot == "камень") alert("Победа")
+            else alert("Ничья")
+        }
+    </script>
+    <div id=bot>
+        <img src="камень.jpg" height="400px">
+    </div>
+    <div id=user>
+        <a onclick="
+            user='камень'
+            turn()
+        ">
+            <img src="камень.jpg" width="200px">
+        </a>
+        <a onclick="
+            user='ножницы'
+            turn()
+        ">
+            <img src="ножницы.jpg" width="200px">
+        </a>
+        <a onclick="
+            user='бумага'
+            turn()
+        ">
+            <img src="бумага.jpg" width="200px">
+        </a>
+    </div>
+</body>
+</html>
